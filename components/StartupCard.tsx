@@ -34,7 +34,7 @@ const StartupCard = ({ post }: { post: StartupTypeCard }) => {
             alt={post?.author?.name!}
             width={48}
             height={48}
-            className="rounded-full"
+            className="rounded-full object-cover"
           />
         </Link>
       </div>
