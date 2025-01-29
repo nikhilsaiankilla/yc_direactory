@@ -74,8 +74,7 @@ export const STARTUPS_BY_AUTHOR_QUERY = defineQuery(`*[_type == "startup" && aut
     image,
   }`);
 
-export const PLAYLIST_BY_SLUG_QUERY =
-  defineQuery(`*[_type == "playlist" && slug.current == $slug][0]{
+export const PLAYLIST_BY_SLUG_QUERY = defineQuery(`*[_type == "playlist" && slug.current == $slug][0]{
   _id,
   title,
   slug,
