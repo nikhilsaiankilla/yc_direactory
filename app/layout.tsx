@@ -54,8 +54,8 @@ const workSans = localFont({
   variable: "--font-work-sans",
 });
 export const metadata: Metadata = {
-  title: "YC Diractory",
-  description: "Pichify, Vote And Grow",
+  title: "PitchPoint",
+  description: "PitchPoint, Vote And Grow",
 };
 
 export default function RootLayout({
