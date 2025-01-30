@@ -1,5 +1,5 @@
 import { auth, signIn, signOut } from '@/auth'
-import { BadgePlus, LogOut } from 'lucide-react';
+import { BadgePlus, GithubIcon, LogOut } from 'lucide-react';
 import Image from 'next/image'
 import Link from 'next/link'
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -50,7 +50,7 @@ const Navbar = async () => {
                 "use server"
                 await signIn('github')
               }}>
-                <button>Login</button>
+                <button className='flex gap-2 items-center justify-center font-bold border-black border-4 px-3 py-1 rounded-xl hover:bg-primary transition-all duration-400 ease-out'><GithubIcon size={18} className='font-bold'/> Sign In</button>
               </form>
             )
           }
