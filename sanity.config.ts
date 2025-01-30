@@ -1,6 +1,8 @@
+'use client';
 /**
  * This configuration is used for the Sanity Studio that’s mounted on the `\app\studio\[[...tool]]\page.tsx` route
  */
+// Add 'use client' only if you need to force the code to run on the client-side
 
 import { visionTool } from '@sanity/vision';
 import { defineConfig } from 'sanity';
@@ -12,8 +14,6 @@ import { schema } from './sanity/schemaTypes';
 import { structure } from './sanity/structure';
 import { markdownSchema } from 'sanity-plugin-markdown';
 
-// Add 'use client' only if you need to force the code to run on the client-side
-'use client';
 
 export default defineConfig({
   basePath: '/studio',
