@@ -3,6 +3,8 @@ import GitHub from "next-auth/providers/github";
 import { AUTHOR_BY_GITHUB_ID_QUERY } from "@/sanity/lib/queries";
 import { client } from "@/sanity/lib/client";
 import { writeClient } from "@/sanity/lib/write-client";
+import sendEmail from "./services/sendMail";
+import { generateWelcomeEmail } from "./lib/utils";
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
   providers: [GitHub],
@@ -27,6 +29,9 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
           image,
           bio: bio || "",
         });
+
+        const emailContent = generateWelcomeEmail(name);
+        await sendEmail(email, "Welcome to Pitchpoint", emailContent);
       }
 
       return true;
