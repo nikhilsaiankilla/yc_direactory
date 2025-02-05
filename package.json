@@ -28,6 +28,7 @@
     "@tailwindcss/typography": "^0.5.15",
     "@uiw/react-md-editor": "^4.0.4",
     "class-variance-authority": "^0.7.0",
+    "cloudinary": "^2.5.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.452.0",
     "markdown-it": "^14.1.0",

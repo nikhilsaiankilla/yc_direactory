@@ -45,10 +45,10 @@ export const generateWelcomeEmail = (name: string) => {
         <div class="content">
             <p>We are thrilled to have you onboard! 🚀</p>
             <p>PitchPoint is your hub for innovative ideas, collaborations, and startup growth.</p>
-            <a href="https://pitchpoint.com/dashboard" class="btn">Get Started</a>
+            <a href="https://pitchpointt.vercel.app/" class="btn">Get Started</a>
         </div>
         <div class="footer">
-            <p>Need help? <a href="https://pitchpoint.com/support">Contact Support</a></p>
+            <p>Need help? <a href="https://pitchpointt.vercel.app/">Contact Support</a></p>
             <p>&copy; 2025 PitchPoint. All rights reserved.</p>
         </div>
     </div>
